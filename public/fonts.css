@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Black Future';
+  src: url('./fonts/BlackFuture-gx1q3.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxon';
+  src: url('./fonts/proxon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,178 @@
+.battleScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #4a0e4e;
+  min-height: 100vh;
+}
+
+.catSelectContainer {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.catSelect {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.battleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  width: 250px; /* Match the width of the cat card */
+}
+
+.vs {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin: 0 20px;
+}
+
+.healthBar {
+  height: 20px;
+  border-radius: 7px;
+  transition: width 0.3s ease-in-out;
+  text-align: left;
+  position: relative;
+}
+
+.catSelect {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.d20 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+}
+
+.rollResult {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.attackButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.battleLog {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.battleLog h3 {
+  margin-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.catAttackLog {
+  color: #4CAF50; /* Green color for cat attacks */
+}
+
+.dogAttackLog {
+  color: #F44336; /* Red color for dog attacks */
+}
+
+/* Add some spacing between log entries */
+.battleLog p {
+  margin: 5px 0;
+}
+
+.healthBarContainer {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.healthText {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.greenHealth {
+  background-color: #4CAF50;
+}
+
+.yellowHealth {
+  background-color: #FFC107;
+}
+
+.orangeHealth {
+  background-color: #FF9800;
+}
+
+.redHealth {
+  background-color: #F44336;
+}
+
+.catCardWrapper, .dogCardWrapper {
+  width: 100%;
+  height: 400px; /* Set a fixed height for both wrappers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catCardWrapper > div, .dogCardWrapper > div {
+  width: 100%;
+  height: 100%;
+}
+
+.dogCardWrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,17 @@
+.homeView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px); /* Adjust based on your navbar height */
+}
+
+.featureImage {
+  background-color: #d3d3d3;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  border-radius: 10px;
+}

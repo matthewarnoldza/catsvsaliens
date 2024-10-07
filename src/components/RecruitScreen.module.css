@@ -1,0 +1,160 @@
+.recruitScreen {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #4a0e4e;
+  min-height: calc(100vh - 100px);
+}
+
+.baitSection {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.baitGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.baitButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 120px;
+}
+
+.baitButton:hover {
+  background-color: #1a1a1a;
+}
+
+.baitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.baitButton.selected {
+  border-color: #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+.baitImageContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.baitImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.baitName {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.baitInventory {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.cardDisplayArea {
+  width: 40%;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 5px solid #C0C0C0;
+  overflow-y: auto; /* Add this to enable scrolling if needed */
+  max-height: calc(100vh - 140px); /* Adjust this value as needed */
+}
+
+.catCard {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px; /* Increased from 200px */
+  height: 320px; /* Increased from 280px */
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.catImageContainer {
+  height: 50%;
+  padding: 10px;
+  background-color: #1a1a1a; /* Very dark grey */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.catInfo {
+  padding: 12px; /* Increased from 8px */
+  background-color: #ffffff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catName {
+  font-size: 1.1em; /* Increased from 1em */
+  margin: 0 0 6px 0;
+  color: #333;
+}
+
+.catStats {
+  font-size: 0.9em; /* Increased from 0.8em */
+  margin: 3px 0;
+}
+
+.specialMove {
+  font-style: italic;
+  color: #666;
+  font-size: 0.85em; /* Increased from 0.75em */
+  margin: 3px 0;
+}
+
+.catRarity {
+  font-weight: bold;
+  color: #4a0e4e;
+  text-transform: uppercase;
+  font-size: 0.9em; /* Increased from 0.8em */
+  margin: 3px 0;
+}
+
+/* ... (keep other existing styles for waiting animation, spinner, cat card, etc.) ... */
